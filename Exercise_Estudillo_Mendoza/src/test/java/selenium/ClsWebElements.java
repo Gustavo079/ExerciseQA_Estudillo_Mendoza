@@ -31,7 +31,7 @@ public class ClsWebElements
     public WebElement getGetWebElement(By by)
     {
         try
-        {
+        {  //The INFO Status was bad, so i change informacion to INFO
         	ClsReport.fnLog(Status.INFO, "Step - Get Web Element: " + by.toString(), false);
             WebElement pobjElement = ClsBrowser.objDriver.findElement(by);
             ClsReport.fnLog(Status.PASS, "Step - The Web Element: " + by.toString() + " was found as expected.", false);
