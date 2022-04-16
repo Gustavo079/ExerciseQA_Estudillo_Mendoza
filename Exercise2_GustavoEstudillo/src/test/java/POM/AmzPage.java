@@ -35,11 +35,12 @@ public class AmzPage extends Browser{
 	        wait.until(pageLoadCondition);
 	    }
 	 
-	 
+	 //do click in the locator
 	 public void Click(By Locator) 
 		{
 			driver.findElement(Locator).click();
 		}
+	 
 	 
 	 public void userLog(String inputText, By locator) {
 			driver.findElement(locator).sendKeys(inputText);
